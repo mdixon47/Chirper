@@ -1,0 +1,14 @@
+<!-- app/home/template.hbs -->
+
+<h1>Home</h1>
+
+<div class="page-container home-page">
+  <aside class="left">
+    <p>{{model.user.username}}</p>
+    {{profile-glance}}
+  </aside>
+  <main>
+    {{status-update}}
+    {{chirps-list chirps=model.chirps}}
+  </main>
+</div>
